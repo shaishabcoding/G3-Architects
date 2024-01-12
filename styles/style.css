@@ -12,7 +12,7 @@
   padding: 1rem 1.5rem;
   border: none;
   color: white;
-  margin: 2rem;
+  margin: 2rem 0;
   font-size: 1.25rem;
 }
 button,
@@ -67,7 +67,40 @@ nav li a {
 .banner img {
   margin-top: 1.25rem;
 }
-
+/* main style */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* teams style*/
+.teams-container {
+  display: flex;
+  align-items: center;
+}
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.teams-content {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.teams-content-title {
+  font-size: 3rem;
+}
+.teams-content .s1 {
+  color: #727272;
+  font-weight: 500;
+}
+.teams-content .s2 {
+  color: #131313;
+  font-weight: 700;
+}
+.teams-content .s3 {
+  color: #ff900e;
+  font-weight: 700;
+}
 /* responsive style */
 /* for mobile */
 @media screen and (max-width: 576px) {
@@ -80,11 +113,11 @@ nav li a {
   }
 }
 /* for tablet */
-@media screen and (min-width:576px) and (max-width: 960px) {
-  header{
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
     padding: 50px;
   }
-  nav{
+  nav {
     flex-direction: column;
   }
 }
