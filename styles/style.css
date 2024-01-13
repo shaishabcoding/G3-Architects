@@ -35,7 +35,8 @@ html {
   /* box-sizing: border-box; */
   font-family: "Work Sans", sans-serif;
 }
-img {
+.banner img,
+.teams-img-container img {
   width: 100%;
   border-radius: 0.5rem;
 }
@@ -109,6 +110,33 @@ main {
   color: #ff900e;
   font-weight: 700;
 }
+/* facts section */
+.facts {
+  margin-top: 10rem;
+}
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6.25rem;
+  gap: 10px;
+}
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  padding: 2.5rem;
+  text-align: center;
+}
+.facts-card-container .card-stats {
+  font-size: 2.8rem;
+  color: #424242;
+}
+.card * {
+  margin: 0.5rem 0;
+}
+.facts-card-container .card-title {
+  color: #727272;
+  font-size: 1.25rem;
+}
 /* responsive style */
 /* for mobile */
 @media screen and (max-width: 576px) {
@@ -141,6 +169,14 @@ main {
     margin: 1.5rem 0;
     font-size: 0.8rem;
   }
+  .facts-card-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3rem;
+  }
+  .facts {
+    margin-top: 2rem;
+  }
 }
 /* for tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -157,5 +193,14 @@ main {
   }
   .teams-container div {
     width: 100%;
+  }
+  .facts-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 3rem;
+  }
+  .facts {
+    margin-top: 2rem;
   }
 }
