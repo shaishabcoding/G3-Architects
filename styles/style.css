@@ -59,6 +59,9 @@ nav > ul {
 }
 nav li a {
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #424242;
 }
 /* banner style */
 .banner-content {
@@ -148,8 +151,61 @@ main {
   filter: saturate(0);
   gap: 2rem 4rem;
 }
-.sponsors-img-container img{
+.sponsors-img-container img {
   width: 100%;
+}
+/* features style */
+.features {
+  display: flex;
+  margin-top: 6rem;
+  gap: 5rem;
+  align-items: center;
+}
+.features > div {
+  width: 50%;
+}
+.features img {
+  width: 100%;
+}
+.features .card {
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 1.125rem;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features .card-title {
+  color: #131313;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.feature-content > .description {
+  margin-bottom: 2rem;
+}
+.feature-content > .section-title {
+  width: 80%;
+  border-left: 0.32rem solid #ff900e;
+  padding-left: 1.25rem;
+}
+.feature-img {
+  position: relative;
+}
+.ten-years-badge {
+  width: max-content;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  background: #ff900e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-20%, 30%);
+}
+.ten-years-badge * {
+  margin: 0;
+  color: white;
 }
 /* responsive style */
 /* for mobile */
