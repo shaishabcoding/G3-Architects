@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
 
 /* shared style */
 .section-title {
@@ -30,9 +30,7 @@ html {
   margin: 0;
 }
 * {
-  /* padding: 0; */
-  /* margin: 0; */
-  /* box-sizing: border-box; */
+  transition: 1s ease-in all;
   font-family: "Work Sans", sans-serif;
 }
 .banner img,
@@ -148,8 +146,13 @@ main {
   display: grid;
   margin-top: 4rem;
   grid-template-columns: repeat(5, 1fr);
-  filter: saturate(0);
   gap: 2rem 4rem;
+}
+.sponsors-img-container img {
+  filter: saturate(0);
+}
+.sponsors-img-container img:hover {
+  filter: saturate(100);
 }
 .sponsors-img-container img {
   width: 100%;
@@ -207,8 +210,8 @@ main {
   margin: 0;
   color: white;
 }
-footer{
-  background: #FFF4E7;
+footer {
+  background: #fff4e7;
   padding: 2rem 0;
   text-align: center;
   margin-top: 3rem;
